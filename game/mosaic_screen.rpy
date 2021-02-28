@@ -21,6 +21,16 @@ screen mosaic():
 
     timer 1.5 action Function(renpy.restart_interaction) repeat True
 
+
+
+screen mosaic_test():
+
+    grid 5 5:
+        for x in range(25):
+            text str(x)
+
 label start:
 
-    call screen mosaic
+    # call screen mosaic
+
+    call screen mosaic_test
